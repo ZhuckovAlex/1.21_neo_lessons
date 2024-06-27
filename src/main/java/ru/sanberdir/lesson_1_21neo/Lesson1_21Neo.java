@@ -12,6 +12,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import ru.sanberdir.lesson_1_21neo.items.InitItems;
+import ru.sanberdir.lesson_1_21neo.tab.CreativeTabNeo;
 
 @Mod(Lesson1_21Neo.MODID)
 public class Lesson1_21Neo
@@ -34,7 +36,8 @@ public class Lesson1_21Neo
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-
+        CreativeTabNeo.register(modEventBus);
+        InitItems.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
