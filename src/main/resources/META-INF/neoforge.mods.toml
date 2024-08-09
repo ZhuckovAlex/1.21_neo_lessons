@@ -23,10 +23,10 @@ license="${mod_license}"
 modId="lesson_1_21neo" #mandatory
 
 # The version number of the mod
-version="1.0.0-1.21-Neo" #mandatory
+version="1.0.0-1.21Neo" #mandatory
 
 # A display name for the mod
-displayName="lesson 1.21 Neo" #mandatory
+displayName="Lesson 1.21 Neo" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -44,7 +44,7 @@ displayName="lesson 1.21 Neo" #mandatory
 authors="Sanberdir" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''Description'''
+description='''Описание тут'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]

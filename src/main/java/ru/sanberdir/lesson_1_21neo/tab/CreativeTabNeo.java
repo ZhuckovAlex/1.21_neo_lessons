@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import ru.sanberdir.lesson_1_21neo.blocks.InitBlocks;
 import ru.sanberdir.lesson_1_21neo.items.InitItems;
 
 import java.util.function.Supplier;
@@ -33,7 +34,10 @@ public class CreativeTabNeo extends CreativeModeTab {
             .displayItems((params, output) -> {
                 // Тут отображаются предметы
                 output.accept(InitItems.BALL.get());
+                // Тут отображаются блоки
+                output.accept(InitItems.EXAMPLE_BLOCK_ITEM.get());
             })
+
             .build()
     );
 

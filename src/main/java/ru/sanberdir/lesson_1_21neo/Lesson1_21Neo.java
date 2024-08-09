@@ -12,6 +12,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import ru.sanberdir.lesson_1_21neo.blocks.InitBlocks;
 import ru.sanberdir.lesson_1_21neo.items.InitItems;
 import ru.sanberdir.lesson_1_21neo.tab.CreativeTabNeo;
 
@@ -38,6 +39,7 @@ public class Lesson1_21Neo
         NeoForge.EVENT_BUS.register(this);
         CreativeTabNeo.register(modEventBus);
         InitItems.register(modEventBus);
+        InitBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

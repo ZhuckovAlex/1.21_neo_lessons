@@ -3,11 +3,13 @@ package ru.sanberdir.lesson_1_21neo.items;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ru.sanberdir.lesson_1_21neo.Lesson1_21Neo;
+import ru.sanberdir.lesson_1_21neo.blocks.InitBlocks;
 import ru.sanberdir.lesson_1_21neo.items.custom.FireItem;
 
 import java.util.function.Supplier;
@@ -27,6 +29,8 @@ public class InitItems {
                     .effect(new MobEffectInstance(MobEffects.CONFUSION, 60, 0), 0.05F)
                     .build())
     );
+    public static final Supplier<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", InitBlocks.EXAMPLE_BLOCK, new Item.Properties());
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
