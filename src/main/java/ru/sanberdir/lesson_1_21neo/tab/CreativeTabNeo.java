@@ -35,16 +35,10 @@ public class CreativeTabNeo extends CreativeModeTab {
                 // Тут отображаются предметы
                 output.accept(InitItems.BALL.get());
                 // Тут отображаются блоки
-                output.accept(InitItems.EXAMPLE_BLOCK_ITEM.get());
-            })
-
-            .build()
+                output.accept(InitItems.CUSTOM_PLANKS_ITEM.get());
+            }).build()
     );
-
-
-
-
-    public static void register(IEventBus eventBus) {
+        public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
 }
