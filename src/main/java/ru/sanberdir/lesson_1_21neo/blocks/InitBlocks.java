@@ -16,7 +16,7 @@ public class InitBlocks {
     public static final DeferredBlock<Block> CUSTOM_PLANKS = BLOCKS.registerBlock(
             "custom_planks",
             FlameBlock::new,
-            BlockBehaviour.Properties.of().destroyTime(2.0f).explosionResistance(10.0f).sound(SoundType.WOOD));
+            BlockBehaviour.Properties.of().destroyTime(2.0f).explosionResistance(3.0F).sound(SoundType.WOOD));
 
     // Метод для регистрации блоков в событии инициализации.
     // Вызывается для добавления блоков в систему Minecraft Forge.

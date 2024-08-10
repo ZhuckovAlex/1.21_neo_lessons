@@ -1,6 +1,6 @@
 {
   "item.lesson_1_21neo.ball":"Мяч",
-  "item.lesson_1_21neo.example_block":"Обычный блок",
-  "block.lesson_1_21neo.example_block":"Обычный блок",
+  "item.lesson_1_21neo.custom_planks":"Обычные доски",
+  "block.lesson_1_21neo.custom_planks":"Обычные доски",
   "itemGroup.lesson_1_21neo.lesson21":"Урок21"
 }

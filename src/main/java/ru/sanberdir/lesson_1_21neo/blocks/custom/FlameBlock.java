@@ -10,9 +10,9 @@ import net.minecraft.world.level.block.state.BlockState;
 public class FlameBlock extends Block {
 
     // Конструктор класса, принимающий свойства блока.
-    public FlameBlock(Properties pProperties) {
+    public FlameBlock(Properties properties) {
         // Вызов конструктора суперкласса с передачей свойств блока.
-        super(pProperties);
+        super(properties);
     }
 
     // Метод определяет, является ли блок воспламеняемым.
@@ -33,6 +33,6 @@ public class FlameBlock extends Block {
     @Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         // Устанавливаем скорость распространения огня в 30. Это влияет на то, насколько быстро огонь будет распространяться от блока.
-        return 30;
+        return 45;
     }
 }

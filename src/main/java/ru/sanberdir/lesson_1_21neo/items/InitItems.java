@@ -29,7 +29,8 @@ public class InitItems {
                     .effect(new MobEffectInstance(MobEffects.CONFUSION, 60, 0), 0.05F)
                     .build())
     );
-    public static final Supplier<BlockItem> CUSTOM_PLANKS_ITEM = ITEMS.registerSimpleBlockItem("custom_planks", InitBlocks.CUSTOM_PLANKS, new Item.Properties());
+    public static final Supplier<BlockItem> CUSTOM_PLANKS_ITEM = ITEMS.registerSimpleBlockItem
+            ("custom_planks", InitBlocks.CUSTOM_PLANKS, new Item.Properties());
 
 
     public static void register(IEventBus eventBus){
