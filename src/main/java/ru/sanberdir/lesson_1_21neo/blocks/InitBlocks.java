@@ -12,11 +12,11 @@ public class InitBlocks {
     // Создает объект DeferredRegister для регистрации блоков, идентифицируемый строкой "lesson_1_21neo".
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks("lesson_1_21neo");
 
-    // Регистрация блока с именем "example_block" с использованием конструктора FlameBlock и установки его свойств.
+    // Регистрация блока с именем "custom_planks" с использованием конструктора FlameBlock и установки его свойств.
     public static final DeferredBlock<Block> CUSTOM_PLANKS = BLOCKS.registerBlock(
             "custom_planks",
             FlameBlock::new,
-            BlockBehaviour.Properties.of().destroyTime(0.3f).explosionResistance(10.0f).sound(SoundType.AMETHYST));
+            BlockBehaviour.Properties.of().destroyTime(2.0f).explosionResistance(10.0f).sound(SoundType.WOOD));
 
     // Метод для регистрации блоков в событии инициализации.
     // Вызывается для добавления блоков в систему Minecraft Forge.
